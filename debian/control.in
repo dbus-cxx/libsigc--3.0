@@ -1,0 +1,65 @@
+Source: libsigc++-3.0
+Section: devel
+Priority: optional
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Uploaders: @GNOME_TEAM@
+Build-Depends: debhelper-compat (= 12),
+               dh-sequence-gnome,
+               doxygen,
+               graphviz,
+               mm-common (>= 0.9.10),
+               xsltproc
+Standards-Version: 4.3.0
+Vcs-Git: https://salsa.debian.org/gnome-team/libsigcplusplus.git
+Vcs-Browser: https://salsa.debian.org/gnome-team/libsigcplusplus
+Homepage: https://libsigcplusplus.github.io/libsigcplusplus/
+
+Package: libsigc++-3.0
+Section: libs
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Architecture: any
+Multi-Arch: same
+Description: type-safe Signal Framework for C++ - runtime
+ This library implements a full callback system for use in widget
+ libraries, abstract interfaces, and general programming. It provides
+ the ability to connect an abstract callback to a class method,
+ function, or function object, and contains adaptor classes for the
+ connection of dissimilar callbacks.
+ .
+ These are the runtime files for libsigc++, needed only if you wish to
+ run software which depends on it.
+
+Package: libsigc++-3.0-dev
+Section: libdevel
+Depends: ${misc:Depends},
+         libsigc++-3.0 (= ${binary:Version}),
+         pkg-config
+Suggests: libsigc++-3.0-doc
+Multi-Arch: same
+Architecture: any
+Description: type-safe Signal Framework for C++ - development files
+ This library implements a full callback system for use in widget
+ libraries, abstract interfaces, and general programming. It provides
+ the ability to connect an abstract callback to a class method,
+ function, or function object, and contains adaptor classes for the
+ connection of dissimilar callbacks.
+ .
+ These are the development files for libsigc++, needed only if you
+ wish to write software which uses it.
+
+Package: libsigc++-3.0-doc
+Section: doc
+Depends: ${misc:Depends}
+Architecture: all
+Multi-Arch: foreign
+Description: type-safe Signal Framework for C++ - reference documentation
+ This library implements a full callback system for use in widget
+ libraries, abstract interfaces, and general programming. It provides
+ the ability to connect an abstract callback to a class method,
+ function, or function object, and contains adaptor classes for the
+ connection of dissimilar callbacks.
+ .
+ This package contains the reference documentation for libsigc++,
+ needed only if you wish to write software which uses it.
