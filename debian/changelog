@@ -1,8 +1,8 @@
-libsigc++-3.0 (3.0.3-0) UNRELEASED; urgency=medium
+libsigc++-3.0 (3.0.3-0) unstable; urgency=medium
 
-  * JJ
+  * marking as released
 
- -- Robert Middleton <robert.middleton@rm5248.com>  Thu, 18 Jun 2020 16:36:52 -0400
+ -- Robert Middleton <robert.middleton@rm5248.com>  Sat, 30 Apr 2022 21:58:38 -0400
 
 libsigc++-2.0 (2.10.2-1) unstable; urgency=medium
 
